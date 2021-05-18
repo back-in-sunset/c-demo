@@ -1,10 +1,12 @@
 #include<stdio.h>
+#include<unistd.h>
 
 void println() {
     printf("+----------------------------------------------------------+");
     printf("\n");
 }
 
+void row_flush_print();
 
 int main() {
     int a1=20, a2=345, a3=700, a4=22;
@@ -22,6 +24,16 @@ int main() {
     printf("%9d %9d %9d %9d\n", b1, b2, b3, b4);
     printf("%9d %9d %9d %9d\n", c1, c2, c3, c4);
     printf("%9d %9d %9d %9d\n", d1, d2, d3, d4);
+    println();
+
+    row_flush_print();
     
     return 0;
 }
+
+void row_flush_print(){
+    printf("C语言中文网");
+    sleep(5);  //程序暂停5秒钟
+    printf("http://c.biancheng.net\n");
+}
+
