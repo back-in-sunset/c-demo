@@ -6,6 +6,8 @@ CC=gcc
 start: server
 	@./server
 
+build: server
+
 server:$(OBJ)
 	@$(CC) -o $@ $^ -Wall
 

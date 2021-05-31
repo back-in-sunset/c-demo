@@ -7,5 +7,6 @@ void println() {
 
 
 int main() {
+    printf(">INFO start!\n")
     return 0;
 }
