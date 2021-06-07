@@ -81,3 +81,5 @@ void scanf_like_re(){
     printf("str1=%s \nstr2=%s\n", str1, str2);
 }
 
+
+
