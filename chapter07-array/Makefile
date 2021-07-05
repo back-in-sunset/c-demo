@@ -7,12 +7,12 @@ FLAGS=-ggdb3 -O0 -Wall -Werror
 start: server
 	@./server
 
-build:$(OBJ)
-	@$(CC) -o $@ $^ $(FLAGS)
+build-linux:$(OBJ)
+	$(CC) -o app $^ 
 
 server:$(OBJ)
-	@$(CC) -o $@ $^
+	@$(CC) -o $@ $^ $(FLAGS)
 
 clean:
-	@rm server 2>&1 | true
+	@rm server app 2>&1 | true
 
